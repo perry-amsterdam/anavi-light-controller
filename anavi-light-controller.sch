@@ -1,41 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:anavi-light-controller-rescue
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:ESP8266
-LIBS:mylibrary
-LIBS:w_connectors
-LIBS:rur
-LIBS:switches
+EESchema Schematic File Version 4
 LIBS:anavi-light-controller-cache
-EELAYER 25 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -50,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ESP-12E ESP-12
+L anavi-light-controller-rescue:ESP-12E ESP-12
 U 1 1 598AC515
 P 3150 4200
 F 0 "ESP-12" H 3150 4100 50  0000 C CNN
@@ -61,7 +26,7 @@ F 3 "" H 3150 4200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Screw_Terminal_1x04 J1
+L anavi-light-controller-rescue:Screw_Terminal_1x04 J1
 U 1 1 598AC7B8
 P 8100 2300
 F 0 "J1" H 8100 2750 50  0000 C TNN
@@ -72,7 +37,7 @@ F 3 "" H 8075 2500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L CONN_01X03 P1
+L anavi-light-controller-rescue:CONN_01X03 P1
 U 1 1 598AC863
 P 4250 5450
 F 0 "P1" H 4250 5650 50  0000 C CNN
@@ -83,7 +48,7 @@ F 3 "" H 4250 5450 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L LED D1
+L anavi-light-controller-rescue:LED D1
 U 1 1 598AC94C
 P 3750 3050
 F 0 "D1" H 3750 3150 50  0000 C CNN
@@ -94,7 +59,7 @@ F 3 "" H 3750 3050 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L I2C_SENS_1 U1
+L anavi-light-controller-rescue:I2C_SENS_1 U1
 U 1 1 598AD5F1
 P 4750 6150
 F 0 "U1" H 4800 6250 60  0000 C CNN
@@ -105,7 +70,7 @@ F 3 "" H 4750 6150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L I2C_SENS_1 U2
+L anavi-light-controller-rescue:I2C_SENS_1 U2
 U 1 1 598AD642
 P 4750 6500
 F 0 "U2" H 4800 6600 60  0000 C CNN
@@ -116,7 +81,7 @@ F 3 "" H 4750 6500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L I2C_SENS_1 U3
+L anavi-light-controller-rescue:I2C_SENS_1 U3
 U 1 1 598AD681
 P 4750 6900
 F 0 "U3" H 4800 7000 60  0000 C CNN
@@ -127,7 +92,7 @@ F 3 "" H 4750 6900 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR01
+L anavi-light-controller-rescue:GND #PWR01
 U 1 1 598AD955
 P 5800 7250
 F 0 "#PWR01" H 5800 7000 50  0001 C CNN
@@ -138,7 +103,7 @@ F 3 "" H 5800 7250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR02
+L anavi-light-controller-rescue:+3.3V #PWR02
 U 1 1 598AD9BD
 P 5600 5950
 F 0 "#PWR02" H 5600 5800 50  0001 C CNN
@@ -149,7 +114,7 @@ F 3 "" H 5600 5950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R2
+L anavi-light-controller-rescue:R R2
 U 1 1 598ADBC1
 P 3600 6250
 F 0 "R2" V 3680 6250 50  0000 C CNN
@@ -160,7 +125,7 @@ F 3 "" H 3600 6250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R3
+L anavi-light-controller-rescue:R R3
 U 1 1 598ADBF6
 P 3850 6250
 F 0 "R3" V 3930 6250 50  0000 C CNN
@@ -171,7 +136,7 @@ F 3 "" H 3850 6250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R1
+L anavi-light-controller-rescue:R R1
 U 1 1 598ADC31
 P 3300 3050
 F 0 "R1" V 3380 3050 50  0000 C CNN
@@ -182,7 +147,7 @@ F 3 "" H 3300 3050 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L IRF8721PBF-1 Q3
+L anavi-light-controller-rescue:IRF8721PBF-1 Q3
 U 1 1 598ADF58
 P 5100 1550
 F 0 "Q3" H 5450 1650 50  0000 L CNN
@@ -193,7 +158,7 @@ F 3 "" H 5000 1550 50  0000 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L IRF8721PBF-1 Q2
+L anavi-light-controller-rescue:IRF8721PBF-1 Q2
 U 1 1 598ADFA1
 P 5100 2550
 F 0 "Q2" H 5450 2650 50  0000 L CNN
@@ -204,7 +169,7 @@ F 3 "" H 5000 2550 50  0000 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L IRF8721PBF-1 Q1
+L anavi-light-controller-rescue:IRF8721PBF-1 Q1
 U 1 1 598ADFF2
 P 5100 3450
 F 0 "Q1" H 5450 3550 50  0000 L CNN
@@ -215,7 +180,7 @@ F 3 "" H 5000 3450 50  0000 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L dc_jack DC1
+L anavi-light-controller-rescue:dc_jack DC1
 U 1 1 598AE3B5
 P 900 1350
 F 0 "DC1" H 900 1500 60  0000 C CNN
@@ -226,7 +191,7 @@ F 3 "" H 900 1350 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L +3.3V #PWR03
+L anavi-light-controller-rescue:+3.3V #PWR03
 U 1 1 598AE4DA
 P 2750 3300
 F 0 "#PWR03" H 2750 3150 50  0001 C CNN
@@ -237,7 +202,7 @@ F 3 "" H 2750 3300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR04
+L anavi-light-controller-rescue:+3.3V #PWR04
 U 1 1 598AF271
 P 3600 5900
 F 0 "#PWR04" H 3600 5750 50  0001 C CNN
@@ -248,7 +213,7 @@ F 3 "" H 3600 5900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR05
+L anavi-light-controller-rescue:GND #PWR05
 U 1 1 598AFCFA
 P 4050 3050
 F 0 "#PWR05" H 4050 2800 50  0001 C CNN
@@ -259,7 +224,7 @@ F 3 "" H 4050 3050 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR06
+L anavi-light-controller-rescue:GND #PWR06
 U 1 1 598B07EB
 P 4350 4950
 F 0 "#PWR06" H 4350 4700 50  0001 C CNN
@@ -270,7 +235,7 @@ F 3 "" H 4350 4950 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L +12V #PWR07
+L anavi-light-controller-rescue:+12V #PWR07
 U 1 1 598B0E17
 P 7600 2600
 F 0 "#PWR07" H 7600 2450 50  0001 C CNN
@@ -281,7 +246,7 @@ F 3 "" H 7600 2600 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR08
+L anavi-light-controller-rescue:GND #PWR08
 U 1 1 598B0EFE
 P 5100 2900
 F 0 "#PWR08" H 5100 2650 50  0001 C CNN
@@ -292,7 +257,7 @@ F 3 "" H 5100 2900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR09
+L anavi-light-controller-rescue:GND #PWR09
 U 1 1 598B0F2E
 P 5100 1900
 F 0 "#PWR09" H 5100 1650 50  0001 C CNN
@@ -303,7 +268,7 @@ F 3 "" H 5100 1900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR010
+L anavi-light-controller-rescue:GND #PWR010
 U 1 1 598B0F5E
 P 5100 3800
 F 0 "#PWR010" H 5100 3550 50  0001 C CNN
@@ -314,7 +279,7 @@ F 3 "" H 5100 3800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR011
+L anavi-light-controller-rescue:GND #PWR011
 U 1 1 598B1811
 P 2750 5100
 F 0 "#PWR011" H 2750 4850 50  0001 C CNN
@@ -334,7 +299,7 @@ NoConn ~ 2250 4350
 NoConn ~ 2250 4450
 NoConn ~ 2950 5100
 $Comp
-L C C1
+L anavi-light-controller-rescue:C C1
 U 1 1 598B21AC
 P 1200 2200
 F 0 "C1" H 1225 2300 50  0000 L CNN
@@ -345,7 +310,7 @@ F 3 "" H 1200 2200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C2
+L anavi-light-controller-rescue:C C2
 U 1 1 598B222D
 P 2350 2200
 F 0 "C2" H 2375 2300 50  0000 L CNN
@@ -356,7 +321,7 @@ F 3 "" H 2350 2200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR012
+L anavi-light-controller-rescue:+3.3V #PWR012
 U 1 1 598B2382
 P 2550 2000
 F 0 "#PWR012" H 2550 1850 50  0001 C CNN
@@ -367,7 +332,7 @@ F 3 "" H 2550 2000 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR013
+L anavi-light-controller-rescue:GND #PWR013
 U 1 1 598B261C
 P 1800 2500
 F 0 "#PWR013" H 1800 2250 50  0001 C CNN
@@ -378,7 +343,7 @@ F 3 "" H 1800 2500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR014
+L anavi-light-controller-rescue:GND #PWR014
 U 1 1 598B26CA
 P 1100 1550
 F 0 "#PWR014" H 1100 1300 50  0001 C CNN
@@ -389,7 +354,7 @@ F 3 "" H 1100 1550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR015
+L anavi-light-controller-rescue:GND #PWR015
 U 1 1 598B4A74
 P 1600 5700
 F 0 "#PWR015" H 1600 5450 50  0001 C CNN
@@ -400,7 +365,7 @@ F 3 "" H 1600 5700 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5600 5950 5600 7000
+	5600 5950 5600 6250
 Wire Wire Line
 	5600 6250 5450 6250
 Wire Wire Line
@@ -412,7 +377,7 @@ Connection ~ 5600 6600
 Wire Wire Line
 	5800 7100 5450 7100
 Wire Wire Line
-	5800 6350 5800 7250
+	5800 6350 5800 6700
 Wire Wire Line
 	5450 6700 5800 6700
 Connection ~ 5800 7100
@@ -422,23 +387,23 @@ Connection ~ 5800 6700
 Wire Wire Line
 	3150 5100 3150 7000
 Wire Wire Line
-	3150 7000 4550 7000
+	3150 7000 4250 7000
 Wire Wire Line
 	3250 5100 3250 7100
 Wire Wire Line
-	3250 7100 4550 7100
+	3250 7100 4400 7100
 Wire Wire Line
-	4400 6350 4400 7100
+	4400 6350 4400 6700
 Wire Wire Line
-	3850 6700 4550 6700
+	3850 6700 4400 6700
 Connection ~ 4400 7100
 Wire Wire Line
 	4400 6350 4550 6350
 Connection ~ 4400 6700
 Wire Wire Line
-	4250 6250 4250 7000
+	4250 6250 4250 6600
 Wire Wire Line
-	3600 6600 4550 6600
+	3600 6600 4250 6600
 Connection ~ 4250 7000
 Wire Wire Line
 	4250 6250 4550 6250
@@ -448,7 +413,7 @@ Wire Wire Line
 Wire Wire Line
 	3850 6400 3850 6700
 Wire Wire Line
-	3600 5900 3600 6100
+	3600 5900 3600 5950
 Wire Wire Line
 	3600 5950 3850 5950
 Wire Wire Line
@@ -469,7 +434,7 @@ Wire Wire Line
 Wire Wire Line
 	7600 2600 7900 2600
 Wire Wire Line
-	5100 3800 5300 3800
+	5100 3800 5200 3800
 Wire Wire Line
 	5300 3800 5300 3650
 Wire Wire Line
@@ -480,7 +445,7 @@ Connection ~ 5200 3800
 Wire Wire Line
 	5100 2900 5100 2750
 Wire Wire Line
-	5100 2900 5300 2900
+	5100 2900 5200 2900
 Wire Wire Line
 	5300 2900 5300 2750
 Wire Wire Line
@@ -489,7 +454,7 @@ Connection ~ 5200 2900
 Wire Wire Line
 	5100 1900 5100 1750
 Wire Wire Line
-	5100 1900 5300 1900
+	5100 1900 5200 1900
 Wire Wire Line
 	5300 1900 5300 1750
 Wire Wire Line
@@ -498,7 +463,7 @@ Connection ~ 5200 1900
 Wire Wire Line
 	5100 3250 5100 3150
 Wire Wire Line
-	5100 3150 7200 3150
+	5100 3150 5200 3150
 Wire Wire Line
 	7200 3150 7200 2400
 Wire Wire Line
@@ -513,7 +478,7 @@ Wire Wire Line
 	5400 3250 5400 3150
 Connection ~ 5400 3150
 Wire Wire Line
-	5100 2200 7900 2200
+	5100 2200 5200 2200
 Wire Wire Line
 	5100 2200 5100 2350
 Wire Wire Line
@@ -528,7 +493,7 @@ Connection ~ 5400 2200
 Wire Wire Line
 	5100 1350 5100 1200
 Wire Wire Line
-	5100 1200 7200 1200
+	5100 1200 5200 1200
 Wire Wire Line
 	7200 1200 7200 2000
 Wire Wire Line
@@ -551,27 +516,27 @@ Wire Wire Line
 Wire Wire Line
 	3050 3300 3050 1600
 Wire Wire Line
-	1200 2350 2350 2350
+	1200 2350 1800 2350
 Wire Wire Line
-	1800 2300 1800 2500
+	1800 2300 1800 2350
 Connection ~ 1800 2350
 Wire Wire Line
 	2350 2050 2350 2000
 Connection ~ 2350 2000
 Wire Wire Line
-	1050 1300 1850 1300
+	1050 1300 1200 1300
 Wire Wire Line
-	1200 1300 1200 2050
+	1200 1300 1200 2000
 Connection ~ 1200 2000
 Wire Wire Line
 	1050 1350 1100 1350
 Wire Wire Line
-	1100 1350 1100 1550
+	1100 1350 1100 1400
 Wire Wire Line
 	1050 1400 1100 1400
 Connection ~ 1100 1400
 $Comp
-L SW_DIP_x01 SW1
+L anavi-light-controller-rescue:SW_DIP_x01 SW1
 U 1 1 598B559F
 P 2150 5700
 F 0 "SW1" H 2150 5850 50  0000 C CNN
@@ -584,7 +549,7 @@ $EndComp
 Wire Wire Line
 	1600 5700 1850 5700
 $Comp
-L +12V #PWR016
+L anavi-light-controller-rescue:+12V #PWR016
 U 1 1 598AF5A6
 P 1850 1300
 F 0 "#PWR016" H 1850 1150 50  0001 C CNN
@@ -596,7 +561,7 @@ F 3 "" H 1850 1300 50  0000 C CNN
 $EndComp
 Connection ~ 1200 1300
 $Comp
-L R R4
+L anavi-light-controller-rescue:R R4
 U 1 1 5991CFCD
 P 4400 1600
 F 0 "R4" V 4480 1600 50  0000 C CNN
@@ -607,7 +572,7 @@ F 3 "" H 4400 1600 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R5
+L anavi-light-controller-rescue:R R5
 U 1 1 5991D06A
 P 4400 2600
 F 0 "R5" V 4480 2600 50  0000 C CNN
@@ -618,7 +583,7 @@ F 3 "" H 4400 2600 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R6
+L anavi-light-controller-rescue:R R6
 U 1 1 5991D0D3
 P 4400 2900
 F 0 "R6" V 4480 2900 50  0000 C CNN
@@ -641,7 +606,7 @@ Wire Wire Line
 Wire Wire Line
 	2850 2900 4250 2900
 $Comp
-L LD1117S33TR V1
+L anavi-light-controller-rescue:LD1117S33TR V1
 U 1 1 59B80669
 P 1800 2050
 F 0 "V1" H 1800 2300 50  0000 C CNN
@@ -652,7 +617,7 @@ F 3 "" H 1800 2050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2200 2000 2550 2000
+	2200 2000 2350 2000
 Wire Wire Line
 	1400 2000 1200 2000
 Wire Wire Line
@@ -660,7 +625,7 @@ Wire Wire Line
 Wire Wire Line
 	3900 3050 4050 3050
 $Comp
-L +3.3V #PWR017
+L anavi-light-controller-rescue:+3.3V #PWR017
 U 1 1 59B80E88
 P 3250 3300
 F 0 "#PWR017" H 3250 3150 50  0001 C CNN
@@ -671,7 +636,7 @@ F 3 "" H 3250 3300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR018
+L anavi-light-controller-rescue:GND #PWR018
 U 1 1 59B811E0
 P 2850 5100
 F 0 "#PWR018" H 2850 4850 50  0001 C CNN
@@ -682,7 +647,7 @@ F 3 "" H 2850 5100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R7
+L anavi-light-controller-rescue:R R7
 U 1 1 59B813FF
 P 3050 5850
 F 0 "R7" V 3130 5850 50  0000 C CNN
@@ -693,7 +658,7 @@ F 3 "" H 3050 5850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR019
+L anavi-light-controller-rescue:+3.3V #PWR019
 U 1 1 59B81737
 P 3050 6150
 F 0 "#PWR019" H 3050 6000 50  0001 C CNN
@@ -709,4 +674,62 @@ Wire Wire Line
 	2450 5700 3050 5700
 Wire Wire Line
 	3050 6000 3050 6150
+Wire Wire Line
+	5600 6250 5600 6600
+Wire Wire Line
+	5600 6600 5600 7000
+Wire Wire Line
+	5800 7100 5800 7250
+Wire Wire Line
+	5800 6700 5800 7100
+Wire Wire Line
+	4400 7100 4550 7100
+Wire Wire Line
+	4400 6700 4400 7100
+Wire Wire Line
+	4400 6700 4550 6700
+Wire Wire Line
+	4250 7000 4550 7000
+Wire Wire Line
+	4250 6600 4250 7000
+Wire Wire Line
+	4250 6600 4550 6600
+Wire Wire Line
+	3600 5950 3600 6100
+Wire Wire Line
+	5200 3800 5300 3800
+Wire Wire Line
+	5200 2900 5300 2900
+Wire Wire Line
+	5200 1900 5300 1900
+Wire Wire Line
+	5200 3150 5300 3150
+Wire Wire Line
+	5300 3150 5400 3150
+Wire Wire Line
+	5400 3150 7200 3150
+Wire Wire Line
+	5200 2200 5300 2200
+Wire Wire Line
+	5300 2200 5400 2200
+Wire Wire Line
+	5400 2200 7900 2200
+Wire Wire Line
+	5200 1200 5300 1200
+Wire Wire Line
+	5300 1200 5400 1200
+Wire Wire Line
+	5400 1200 7200 1200
+Wire Wire Line
+	1800 2350 2350 2350
+Wire Wire Line
+	1800 2350 1800 2500
+Wire Wire Line
+	2350 2000 2550 2000
+Wire Wire Line
+	1200 2000 1200 2050
+Wire Wire Line
+	1100 1400 1100 1550
+Wire Wire Line
+	1200 1300 1850 1300
 $EndSCHEMATC
